@@ -1,0 +1,28 @@
+/*  Style global de la page */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #a19d9d9c;
+    color: #333;
+  }
+  
+  /*  Titre principal affichant le code HTTP */
+  h1 {
+    font-size: 3em;
+    color: #d33;
+  }
+  
+  /*  Style des paragraphes (message et tag) */
+  p {
+    font-size: 1.5em;
+  }
+  
+  /*  Style des liens (retour à l'accueil) */
+  a {
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    color: #007bff;
+  }
+  

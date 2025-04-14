@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+  <!-- Lien vers le fichier CSS pour le style de la page -->
+  <link rel="stylesheet" href="/css/code.css">
+
+   <!--Rendre la page responsive -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <h1 id="code">code</h1>
+  <p id="message">Message ici </p>
+  <p id="tag">#Tag</p>
+  <a href="/">⬅ Retour à l’accueil</a>
+
+  <script>
+    //  Récupérer l’URL actuelle
+    const pathParts = window.location.pathname.split('/');
+    const code = pathParts[pathParts.length - 1];
+
+    fetch(`/api/${code}`)
+      .then(res => {
+        if (!res.ok) {
+
+          //  Si la réponse est invalide, rediriger vers la page 404
+          location.href = "/404.html";
+
+        }
+        return res.json();
+      })
+      .then(data => {
+
+        //  Mettre à jour la page avec les informations de l'excuse
+        document.getElementById('code').textContent = ` ${data.http_code}`;
+        document.getElementById('message').textContent =  `Message :${data.message}`;
+        document.getElementById('tag').textContent = `#${data.tag}`;
+      })
+      .catch(() => {
+        location.href = "/404.html";
+      });
+  </script>
+</body>
+</html>

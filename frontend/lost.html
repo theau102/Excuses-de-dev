@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page perdue</title>
+
+  <!-- Lien vers le fichier CSS pour le style de la page -->
+  <link rel="stylesheet" href="css/lost.css">
+  
+  <!--Rendre la page responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Script de redirection automatique après 5 secondes -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "index.html"; // Redirige vers la page d'accuei
+    }, 5000);
+  </script>
+
+</head>
+<body>
+
+  <div id="lost-container">
+
+    <!-- Lien vers le fichier Gif -->
+    <img src="gif/lost.gif" alt="Lost GIF">
+    <h2>i’m lost</h2>
+    <p>Redirection automatique vers la page d’accueil dans 5 secondes.</p>
+  </div>
+
+</body>
+</html>

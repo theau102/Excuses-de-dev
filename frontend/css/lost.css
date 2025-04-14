@@ -1,0 +1,33 @@
+/* Style global de la page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #a19d9d9c;
+  }
+
+/*  Conteneur principal de la page Lost */
+#lost-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+ /*  Image du GIF "Lost" */
+  #lost-container img {
+    max-width: 400px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: none;  
+  background: transparent; 
+  outline: none; 
+  box-shadow: none; 
+  }
+  /* Rendre l'image responsive*/
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  

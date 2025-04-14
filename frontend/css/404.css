@@ -1,0 +1,39 @@
+/* Style global de la page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #a19d9d9c;
+  }
+
+/*  Conteneur principal du message d'erreur */
+#error-container {
+    text-align: center;
+    padding: 100px 20px;
+  }
+/*  Style de l'image d'erreur */
+  #error-container img {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+/*  Style du titre principal (404) */
+  h1 {
+    font-size: 3em;
+    color: #e74c3c;
+  }
+
+/*  Style du lien de retour */
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+  }
+
+/* Rendre l'image responsive*/
+  img {
+    max-width: 100%;
+    height: auto;
+  }

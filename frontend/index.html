@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Les excuses de dev</title>
+
+  <!-- Lien vers le fichier CSS pour le style de la page -->
+  <link rel="stylesheet" href="css/index.css">
+
+   <!--Rendre la page responsive -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <h1 id="title">Les excuses de dev</h1>
+  <div id="excuse">Clique sur le bouton pour obtenir une excuse !</div>
+  <div id="loader">Chargement...</div>
+  <button id="generateBtn">Générer une excuse</button>
+ 
+  <!-- Lien vers le script qui gère la génération des excuses -->
+  <script src="/js/script.js"></script>
+
+
+  <!-- Bouton pour ouvrir la modale -->
+<button id="openModal">Ajouter une excuse</button>
+
+<!-- Modale cachée au départ -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2>Ajouter une excuse</h2>
+
+    <label>Code HTTP :</label>
+    <input type="number" id="http_code" required><br><br>
+
+    <label>Message :</label>
+    <textarea id="message" maxlength="200" required></textarea><br><br>
+
+    <label>Tag :</label>
+    <input type="text" id="tag"><br><br>
+
+    <button id="submitExcuse">Envoyer</button>
+  </div>
+</div>
+
+ <!--  Lien vers le script qui gère l'ajout d'excuses -->
+<script src="/js/add.js"></script>
+
+
+
+</body>
+</html>
