@@ -1,0 +1,27 @@
+[
+  {
+    "http_code": 701,
+    "tag": "Inexcusable",
+    "message": " Meh"
+  },
+  {
+    "http_code": 702,
+    "tag": "Inexcusable",
+    "message": " Emacs"
+  },
+  {
+    "http_code": 703,
+    "tag": "Inexcusable",
+    "message": " Explosion"
+  },
+  {
+    "http_code": 704,
+    "tag": "Inexcusable",
+    "message": " Goto Fail"
+  },
+  {
+    "http_code": 705,
+    "tag": "Inexcusable",
+    "message": " I wrote the code and missed the necessary validation by an oversight (see 795)"
+  }
+]
