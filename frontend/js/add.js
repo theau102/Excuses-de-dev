@@ -32,7 +32,7 @@ submitExcuse.addEventListener("click", () => {
 
    //  Envoi des données au serveur via une requête `POST`
 
-  fetch("http://localhost:3001/excuses", {
+fetch("http://localhost:3001/api/excuses", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ http_code: parseInt(http_code), message, tag })
